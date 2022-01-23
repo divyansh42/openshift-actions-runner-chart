@@ -1,11 +1,11 @@
 name: Publish chart to Pages
 on:
   push:
-    tags:
-      - "v*"
+    # tags:
+    #   - "v*"
 env:
   PAGES_BRANCH: release-chart
-  PAGES_URL: https://redhat-actions.github.io/openshift-actions-runner-chart/
+  PAGES_URL: https://divyansh42.github.io/openshift-actions-runner-chart/
   CHART_OUTPUT_DIR: packages/
   CHART_SRC_DIR: .
 
@@ -82,7 +82,7 @@ jobs:
         run: |
           set -xeE -o pipefail
           git config user.name "Chart Packager Bot"
-          git config user.email github-actions@github.com
+          git config user.email divyansh42@github.com
 
           git status
           git add -Av
