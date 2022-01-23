@@ -1,8 +1,8 @@
 name: Publish chart to Pages
 on:
   push:
-    tags:
-      - "v*"
+    # tags:
+    #   - "v*"
 env:
   PAGES_BRANCH: release-chart
   PAGES_URL: https://divyansh42.github.io/openshift-actions-runner-chart/
